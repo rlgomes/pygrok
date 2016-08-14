@@ -6,10 +6,9 @@ long_desc = ''
 if os.path.exists('README.rst'):
     long_desc = open('README.rst').read()
 
-setup(name = 'pygrok',
-    version = '0.7.4',
-    description = 'A Python library to parse strings and'
-        + ' extract information from structured/unstructured data',
+setup(name = 'pygroker',
+    version = '0.1.0',
+    description = 'Temporary package for https://github.com/garyelephant/pygrok/pull/3',
     long_description= long_desc,
     url = 'https://github.com/garyelephant/pygrok',
     author = 'garyelephant',
