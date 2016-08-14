@@ -7,7 +7,7 @@ if os.path.exists('README.rst'):
     long_desc = open('README.rst').read()
 
 setup(name = 'pygroker',
-    version = '0.1.0',
+    version = '0.1.1',
     description = 'Temporary package for https://github.com/garyelephant/pygrok/pull/3',
     long_description= long_desc,
     url = 'https://github.com/garyelephant/pygrok',
