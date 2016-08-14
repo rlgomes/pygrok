@@ -80,10 +80,10 @@ def compile_pattern(pattern, custom_patterns = {}, custom_patterns_dir = None):
     Custom patterns can be passed in by custom_patterns(pattern name, pattern regular expression pair) 
     or custom_patterns_dir, and will then be used in addition to the built-in ones.
     """
+    global loaded_pre_patterns
     if loaded_pre_patterns is False:
        global predefined_patterns
        predefined_patterns = _reload_patterns(DEFAULT_PATTERNS_DIRS)
-       global loaded_pre_patterns
        loaded_pre_patterns = True
 
     all_patterns = copy.deepcopy(predefined_patterns)
